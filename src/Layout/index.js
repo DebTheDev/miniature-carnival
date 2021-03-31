@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,fragment } from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import Home from "../decks/DeckList";
 import StudyDeck from "../decks/StudyDeck";
@@ -19,7 +19,7 @@ function Layout() {
   };
 
   return (
-    <>
+    <fragment>
       <Header />
       <div className="container">
         <Switch>
@@ -67,7 +67,7 @@ function Layout() {
           </Route>
         </Switch>
       </div>
-    </>
+    </fragment>
   );
 }
 
